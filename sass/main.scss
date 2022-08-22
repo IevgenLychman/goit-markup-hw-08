@@ -1,0 +1,23 @@
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./base/reset";
+@import "./base/visuallyHidden";
+@import "./components/container";
+@import "./components/transition";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/socialIcons";
+@import "./components/closeBtn";
+@import "./components/userPolicy";
+@import "./components/filtersBtns";
+
+@import "layout/header";
+@import "layout/hero";
+@import "layout/description";
+@import "layout/work";
+@import "layout/team";
+@import "layout/clients";
+@import "layout/footer";
+@import "layout/modalHero";
+
+@import "layout/portfolio";

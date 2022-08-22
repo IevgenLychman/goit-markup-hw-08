@@ -1,0 +1,35 @@
+.filters {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.filters__btn {
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  color: var(--primary-text-color);
+  background: var(--team-background);
+  padding: 6px 22px;
+  cursor: pointer;
+
+  transition-property: background-color, color, box-shadow, outline;
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    color: var(--background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: transparent;
+  }
+
+  &.active {
+    color: var(--background-color);
+    background: var(--hover-color);
+  }
+}

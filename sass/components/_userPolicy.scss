@@ -1,0 +1,50 @@
+.user-policy {
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.user-policy__link {
+  text-decoration: none;
+  color: var(--hover-color);
+  border-bottom: 1px solid;
+  transition-property: color;
+  &:hover,
+  &:focus {
+    color: var(--btn-hover);
+  }
+}
+
+.user-policy__custom-icon {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+
+  transition-property: border-color, background-color, background-size,
+    background-origin;
+
+  .user-policy__checkbox:checked + & {
+    border-color: transparent;
+    background-color: var(--hover-color);
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  .user-policy__checkbox:hover + &,
+  .user-policy__checkbox:focus + & {
+    border-color: var(--hover-color);
+  }
+}
+
+.user-policy__check {
+  fill: var(--background-color);
+}
