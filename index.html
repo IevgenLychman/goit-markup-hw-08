@@ -27,6 +27,24 @@
             Web
             <span class="header__studio">Studio</span>
           </a>
+
+          <button
+            class="header__btn"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-modal-open
+          >
+            <svg class="header__contact-icon is-open" width="40" height="40">
+              <use
+                class="header__menu-icon"
+                href="./images/symbol-defs.svg#icon-menu-header "
+              ></use>
+              <use
+                class="header__close-icon"
+                href="./images/symbol-defs.svg#icon-close-header"
+              ></use>
+            </svg>
+          </button>
           <ul class="header__list">
             <li class="header__item">
               <a class="header__link current transition" href="./index.html">
@@ -175,7 +193,7 @@
             <li class="work__img">
               <img
                 src="./images/box-3.jpg"
-                alt="Дизайн пілитри кольорів"
+                alt="Дизайн палітри кольорів"
                 width="370"
                 height="294"
               />
@@ -196,8 +214,8 @@
                 class="team__img"
                 srcset="
                   ./images/foto_1/foto_1@1x.jpg 1x,
-                  ./images/foto_1/foto_1@1x.jpg 2x,
-                  ./images/foto_1/foto_1@1x.jpg 3x
+                  ./images/foto_1/foto_1@2x.jpg 2x,
+                  ./images/foto_1/foto_1@3x.jpg 3x
                 "
                 src="./images/foto_1/foto_1@1x.jpg"
                 alt="Фотографія Ігор Демьяненко"
@@ -257,8 +275,8 @@
                 class="team__img"
                 srcset="
                   ./images/foto_2/foto_2@1x.jpg 1x,
-                  ./images/foto_2/foto_2@1x.jpg 2x,
-                  ./images/foto_2/foto_2@1x.jpg 3x
+                  ./images/foto_2/foto_2@2x.jpg 2x,
+                  ./images/foto_2/foto_2@3x.jpg 3x
                 "
                 src="./images/foto_2/foto_2@1x.jpg"
                 alt="Фотографія Ольга Рєпіна"
@@ -319,8 +337,8 @@
                 class="team__img"
                 srcset="
                   ./images/foto_3/foto_3@1x.jpg 1x,
-                  ./images/foto_3/foto_3@1x.jpg 2x,
-                  ./images/foto_3/foto_3@1x.jpg 3x
+                  ./images/foto_3/foto_3@2x.jpg 2x,
+                  ./images/foto_3/foto_3@3x.jpg 3x
                 "
                 src="./images/foto_3/foto_3@1x.jpg"
                 alt="Фотографія Микола Тарасов"
@@ -381,8 +399,8 @@
                 class="team__img"
                 srcset="
                   ./images/foto_4/foto_4@1x.jpg 1x,
-                  ./images/foto_4/foto_4@1x.jpg 2x,
-                  ./images/foto_4/foto_4@1x.jpg 3x
+                  ./images/foto_4/foto_4@2x.jpg 2x,
+                  ./images/foto_4/foto_4@3x.jpg 3x
                 "
                 src="./images/foto_4/foto_4@1x.jpg"
                 alt="Фотографія Михайло Єрмаков"
@@ -516,7 +534,7 @@
 
     <footer class="footer">
       <div class="container footer__contacts">
-        <div>
+        <div class="footer__wrap">
           <a class="logo footer__logo" href="./index.html">
             Web
             <span class="footer__studio">Studio</span>

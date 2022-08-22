@@ -1,6 +1,7 @@
 .description {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
   width: 480px;
 }
 
@@ -41,4 +42,8 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
