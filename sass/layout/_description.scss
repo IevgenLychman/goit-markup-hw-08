@@ -1,12 +1,17 @@
 .description {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0 auto;
-  width: 480px;
 }
 
 .description__list {
   list-style-type: none;
+}
+
+.description__text {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .description__icon-block {
@@ -41,9 +46,4 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 30px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }

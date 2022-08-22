@@ -3,15 +3,17 @@
 }
 
 .header_wrap {
-  width: 480px;
   padding: 16px 0;
-}
-
-.header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+// .header__nav {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
 
 .header__studio {
   color: #000000;
