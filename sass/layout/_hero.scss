@@ -5,12 +5,13 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero/hero@1x.jpg");
-  // width: 100%;
-  // height: auto;
-  // background-size: 100%;
+  width: 100%;
+  height: 400px;
+  background-size: 480px 400px;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
 

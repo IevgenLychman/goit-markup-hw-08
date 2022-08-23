@@ -2,18 +2,15 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header_wrap {
-  padding: 16px 0;
+.header__wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-// .header__nav {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
+.header__logo {
+  padding: 16px 0;
+}
 
 .header__studio {
   color: #000000;
@@ -25,6 +22,7 @@
   border: none;
   cursor: pointer;
   transition-property: fill;
+  padding: 10px 0;
 }
 
 .header__contact-icon .header__close-icon {

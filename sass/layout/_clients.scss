@@ -20,11 +20,13 @@
   list-style: none;
   justify-content: center;
 }
+
 .clients__list {
-  // width: calc((100% - 30px) / 2);
+  width: calc((100% - 30px) / 2);
 }
+
 .clients__link {
-  padding: 16px 52px;
+  height: 92px;
   color: var(--icon-social-color-main);
   border: 1px solid #afb1b8;
   border-radius: 4px;
