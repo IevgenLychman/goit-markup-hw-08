@@ -285,7 +285,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 .visually-hidden {
@@ -476,9 +475,11 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header__wrap {
+.qwerty {
   display: flex;
-  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   justify-content: space-between;
 }
 
@@ -490,28 +491,69 @@ img {
   color: #000000;
 }
 
-.header__btn {
-  background-color: var(--background-color);
-  fill: var(---primary-text-color);
-  border: none;
+.header__open-btn {
+  min-height: 40px;
+  min-width: 40px;
+  fill: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
   cursor: pointer;
-  transition-property: fill;
-  padding: 10px 0;
+  border: none;
+}
+.header__open-btn:hover, .header__open-btn:focus {
+  color: var(--hover-color);
+}
+@media (min-width: 767px) {
+  .header__open-btn {
+    display: none;
+  }
 }
 
-.header__contact-icon .header__close-icon {
-  display: none;
+.header__menu-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--background-color);
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.header__menu-container > ul {
+  text-decoration: none;
+  list-style: none;
 }
 
-.header__contact-icon.is-open .header__close-icon {
-  display: block;
+.header__close-btn {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 40px;
+  min-width: 40px;
+  fill: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.header__close-btn:hover, .header__close-btn:focus {
+  color: var(--hover-color);
+}
+@media (min-width: 767px) {
+  .header__close-btn {
+    display: none;
+  }
 }
 
-.header__contact-icon.is-open .header__menu-icon {
-  display: none;
+.header__menu-container.is-open {
+  transform: translateX(0);
 }
 
-.header__list {
+.header__menu-container .header__list {
   display: none;
   font-weight: 500;
   font-size: 14px;
