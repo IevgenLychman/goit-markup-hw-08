@@ -18,6 +18,10 @@ body {
   background-color: var(--background-color);
 }
 
+.body.header__menu-container.js-menu-container.is-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
