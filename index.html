@@ -22,7 +22,7 @@
 
     <header class="header">
       <div class="container">
-        <div class="qwerty">
+        <div class="header__mobil">
           <a class="logo header__logo" href="./index.html">
             Web
             <span class="header__studio">Studio</span>
@@ -740,57 +740,66 @@
         </svg>
       </button>
 
-      <ul class="header__menu-list">
-        <li class="header__menu-item">
-          <a class="header__menu-link transition" href="./index.html">Студія</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link transition" href="./portfolio.html">
-            Портфоліо
-          </a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link transition" href="./contacts.html">
-            Контакти
-          </a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-tel transition" href="tel:+380961111111">
-            <svg class="header__contact-icon" width="10" height="16">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-        <li class="header__menu-item">
-          <a
-            class="header__menu-email transition"
-            href="mailto:info@devstudio.com"
-          >
-            <svg class="header__contact-icon" width="16" height="12">
-              <use href="./images/symbol-defs.svg#icon-envelope "></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-      </ul>
-      <ul class="header__menu-social">
-        <li class="header__social-list">
-          <a href="" class="header__social-link">Instagram</a>
-        </li>
-        <li class="header__social-list">
-          <a href="" class="header__social-link">Twitter</a>
-        </li>
-        <li class="header__social-list">
-          <a href="" class="header__social-link">Facebook</a>
-        </li>
-        <li class="header__social-list">
-          <a href="" class="header__social-link">LinkedIn</a>
-        </li>
-      </ul>
+      <div class="header__menu-top">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link transition" href="./index.html">
+              Студія
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link transition" href="./portfolio.html">
+              Портфоліо
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link transition" href="./contacts.html">
+              Контакти
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__menu-bottom">
+        <ul class="header__bottom-list">
+          <li class="header__bottom-item">
+            <a class="header__menu-tel transition" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a
+              class="header__menu-email transition"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="header__menu-social">
+          <li class="header__social-list">
+            <a href="" class="header__social-link">Instagram</a>
+          </li>
+          <li class="header__social-list">
+            <a href="" class="header__social-link">Twitter</a>
+          </li>
+          <li class="header__social-list">
+            <a href="" class="header__social-link">Facebook</a>
+          </li>
+          <li class="header__social-list">
+            <a href="" class="header__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
