@@ -5,12 +5,23 @@
 
 .description__list {
   list-style-type: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+  }
 }
 
 .description__text {
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    width: 354px;
   }
 }
 

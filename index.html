@@ -11,43 +11,36 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--HEADER-->
 
     <header class="header">
-      <div class="container">
-        <div class="header__mobil">
-          <a class="logo header__logo" href="./index.html">
-            Web
-            <span class="header__studio">Studio</span>
-          </a>
+      <div class="header_wrap container">
+        <a class="logo header__logo" href="./index.html">
+          Web
+          <span class="header__studio">Studio</span>
+        </a>
 
-          <button
-            type="button"
-            class="header__open-btn js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="header__contact-icon" width="40" height="40">
-              <use
-                class="header__menu-icon"
-                js-open-menu
-                href="./images/symbol-defs.svg#icon-menu-header "
-              ></use>
-            </svg>
-          </button>
-        </div>
-
+        <button
+          type="button"
+          class="header__open-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__contact-icon" width="40" height="40">
+            <use
+              class="header__menu-icon"
+              js-open-menu
+              href="./images/symbol-defs.svg#icon-menu-header "
+            ></use>
+          </svg>
+        </button>
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link current transition" href="./index.html">
+            <li class="header__item current">
+              <a class="header__link transition" href="./index.html">
                 Студія
               </a>
             </li>
