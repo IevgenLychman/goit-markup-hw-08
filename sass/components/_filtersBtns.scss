@@ -1,7 +1,41 @@
 .filters {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  justify-content: flex-start;
+}
+
+.filters__list {
+  @media screen and (max-width: 399px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(5) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 767px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    &:nth-child(5) {
+      margin-right: 0;
+    }
+  }
 }
 
 .filters__btn {
@@ -14,7 +48,8 @@
   font-family: inherit;
   color: var(--primary-text-color);
   background: var(--team-background);
-  padding: 6px 22px;
+  padding: 6px 25px;
+
   cursor: pointer;
 
   transition-property: background-color, color, box-shadow, outline;

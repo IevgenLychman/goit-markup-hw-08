@@ -40,9 +40,7 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item current">
-              <a class="header__link transition" href="./index.html">
-                Студія
-              </a>
+              <a class="header__link transition" href="./index.html">Студія</a>
             </li>
             <li class="header__item">
               <a class="header__link transition" href="./portfolio.html">
@@ -203,18 +201,32 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__description">
-              <img
-                class="team__img"
-                srcset="
-                  ./images/foto_1/foto_1@1x.jpg 1x,
-                  ./images/foto_1/foto_1@2x.jpg 2x,
-                  ./images/foto_1/foto_1@3x.jpg 3x
-                "
-                src="./images/foto_1/foto_1@1x.jpg"
-                alt="Фотографія Ігор Демьяненко"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/foto_1/foto_1@1x.jpg 1x,
+                    ./images/mobile/foto_1/foto_1@2x.jpg 2x,
+                    ./images/mobile/foto_1/foto_1@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/foto_1/foto_1@1x.jpg 1x,
+                    ./images/tablet/foto_1/foto_1@2x.jpg 2x,
+                    ./images/tablet/foto_1/foto_1@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <img
+                  src="./images/mobile/foto_1/foto_1@1x.jpg"
+                  alt="Фотографія Ігор Демьяненко"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Ігор Демьяненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
@@ -264,18 +276,32 @@
             </li>
 
             <li class="team__description">
-              <img
-                class="team__img"
-                srcset="
-                  ./images/foto_2/foto_2@1x.jpg 1x,
-                  ./images/foto_2/foto_2@2x.jpg 2x,
-                  ./images/foto_2/foto_2@3x.jpg 3x
-                "
-                src="./images/foto_2/foto_2@1x.jpg"
-                alt="Фотографія Ольга Рєпіна"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/foto_2/foto_2@1x.jpg 1x,
+                    ./images/mobile/foto_2/foto_2@2x.jpg 2x,
+                    ./images/mobile/foto_2/foto_2@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/foto_2/foto_2@1x.jpg 1x,
+                    ./images/tablet/foto_2/foto_2@2x.jpg 2x,
+                    ./images/tablet/foto_2/foto_2@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <img
+                  src="./images/mobile/foto_2/foto_2@1x.jpg"
+                  alt="Фотографія Ольга Рєпіна"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -326,18 +352,32 @@
             </li>
 
             <li class="team__description">
-              <img
-                class="team__img"
-                srcset="
-                  ./images/foto_3/foto_3@1x.jpg 1x,
-                  ./images/foto_3/foto_3@2x.jpg 2x,
-                  ./images/foto_3/foto_3@3x.jpg 3x
-                "
-                src="./images/foto_3/foto_3@1x.jpg"
-                alt="Фотографія Микола Тарасов"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/foto_3/foto_3@1x.jpg 1x,
+                    ./images/mobile/foto_3/foto_3@2x.jpg 2x,
+                    ./images/mobile/foto_3/foto_3@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/foto_3/foto_3@1x.jpg 1x,
+                    ./images/tablet/foto_3/foto_3@2x.jpg 2x,
+                    ./images/tablet/foto_3/foto_3@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <img
+                  src="./images/mobile/foto_3/foto_3@1x.jpg"
+                  alt="Фотографія Микола Тарасов"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
@@ -388,18 +428,32 @@
             </li>
 
             <li class="team__description">
-              <img
-                class="team__img"
-                srcset="
-                  ./images/foto_4/foto_4@1x.jpg 1x,
-                  ./images/foto_4/foto_4@2x.jpg 2x,
-                  ./images/foto_4/foto_4@3x.jpg 3x
-                "
-                src="./images/foto_4/foto_4@1x.jpg"
-                alt="Фотографія Михайло Єрмаков"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/foto_4/foto_4@1x.jpg 1x,
+                    ./images/mobile/foto_4/foto_4@2x.jpg 2x,
+                    ./images/mobile/foto_4/foto_4@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 450px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/foto_4/foto_4@1x.jpg 1x,
+                    ./images/tablet/foto_4/foto_4@2x.jpg 2x,
+                    ./images/tablet/foto_4/foto_4@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <img
+                  src="./images/mobile/foto_4/foto_4@1x.jpg"
+                  alt="Фотографія Михайло Єрмаков"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
@@ -528,75 +582,77 @@
     <footer class="footer">
       <div class="container footer__contacts">
         <div class="footer__wrap">
-          <a class="logo footer__logo" href="./index.html">
-            Web
-            <span class="footer__studio">Studio</span>
-          </a>
-          <address class="footer__address">
-            <ul class="footer__list">
-              <li class="footer__meta footer__meta--color">
-                м. Київ, пр-т Лесі Українки, 26
-              </li>
-              <li class="footer__meta">
+          <div class="footer__parts">
+            <a class="logo footer__logo" href="./index.html">
+              Web
+              <span class="footer__studio">Studio</span>
+            </a>
+            <address class="footer__address">
+              <ul class="footer__list">
+                <li class="footer__meta footer__meta--color">
+                  м. Київ, пр-т Лесі Українки, 26
+                </li>
+                <li class="footer__meta">
+                  <a
+                    class="footer__aside transition"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="footer__meta">
+                  <a class="footer__aside transition" href="tel:+380961111111">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__social">
+            <p class="footer__text">приєднуйтесь</p>
+            <ul class="social-icons">
+              <li class="social-icons__list">
                 <a
-                  class="footer__aside transition"
-                  href="mailto:info@devstudio.com"
+                  href=""
+                  class="social-icons__link social-icons__link--color transition"
                 >
-                  info@devstudio.com
+                  <svg class="social-icons__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram "></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer__meta">
-                <a class="footer__aside transition" href="tel:+380961111111">
-                  +38 096 111 11 11
+              <li class="social-icons__list">
+                <a
+                  href=""
+                  class="social-icons__link social-icons__link--color transition"
+                >
+                  <svg class="social-icons__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter "></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__list">
+                <a
+                  href=""
+                  class="social-icons__link social-icons__link--color transition"
+                >
+                  <svg class="social-icons__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook "></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__list">
+                <a
+                  href=""
+                  class="social-icons__link social-icons__link--color transition"
+                >
+                  <svg class="social-icons__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin "></use>
+                  </svg>
                 </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__social">
-          <p class="footer__text">приєднуйтесь</p>
-          <ul class="social-icons">
-            <li class="social-icons__list">
-              <a
-                href=""
-                class="social-icons__link social-icons__link--color transition"
-              >
-                <svg class="social-icons__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram "></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons__list">
-              <a
-                href=""
-                class="social-icons__link social-icons__link--color transition"
-              >
-                <svg class="social-icons__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter "></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons__list">
-              <a
-                href=""
-                class="social-icons__link social-icons__link--color transition"
-              >
-                <svg class="social-icons__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook "></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icons__list">
-              <a
-                href=""
-                class="social-icons__link social-icons__link--color transition"
-              >
-                <svg class="social-icons__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin "></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="sing-up-form">
           <strong>Підпишіться на розсилку</strong>

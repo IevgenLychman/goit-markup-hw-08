@@ -5,6 +5,13 @@
 }
 
 .footer__wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.footer__parts {
   padding-bottom: 60px;
 }
 
@@ -100,6 +107,10 @@
   &:hover,
   &:focus {
     border-color: var(--hover-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
 }
 
