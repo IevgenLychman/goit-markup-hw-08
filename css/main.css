@@ -449,8 +449,12 @@ img {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 399px) {
@@ -478,6 +482,15 @@ img {
   }
   .filters__list:nth-child(5) {
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters__list {
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .filters__list:not(:last-child) {
+    margin-right: 8px;
   }
 }
 
@@ -663,8 +676,16 @@ img {
   overflow: auto;
   padding: 48px 40px;
   background-color: var(--background-color);
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  opacity: 1;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__menu-container:not(.is-open) {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .header__close-btn {
@@ -1245,10 +1266,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 250ms;
   width: calc(100% - 30px);
   height: 609px;
   background: var(--background-color);
@@ -1369,13 +1386,25 @@ img {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    gap: 30px;
+    margin-top: 30px;
+  }
 }
 
 .portfolio__part {
   margin-bottom: 30px;
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__part {
+    margin-bottom: 0;
+    width: 354px;
+  }
 }
 
 .portfolio__link {
@@ -1429,16 +1458,16 @@ img {
   margin-bottom: 4px;
 }
 
-.portfolio__quote {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-
 .portfolio__desc {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.portfolio__quote {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }/*# sourceMappingURL=main.css.map */
