@@ -1,5 +1,8 @@
 .clients {
   padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .clients__title {
@@ -10,6 +13,10 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__desc {
@@ -19,12 +26,20 @@
 
   list-style: none;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__list {
   width: calc((100% - 30px) / 2);
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px * 2) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
   }
 }
 

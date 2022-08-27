@@ -19,8 +19,7 @@
     <header class="header">
       <div class="header_wrap container">
         <a class="logo header__logo" href="./index.html">
-          Web
-          <span class="header__studio">Studio</span>
+          Web<span class="header__studio">Studio</span>
         </a>
 
         <button
@@ -39,8 +38,8 @@
         </button>
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item current">
-              <a class="header__link transition" href="./index.html">Студія</a>
+            <li class="header__item">
+              <a class="header__link current transition" href="./index.html">Студія</a>
             </li>
             <li class="header__item">
               <a class="header__link transition" href="./portfolio.html">
@@ -164,30 +163,60 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__img">
-              <img
-                src="./images/box-1.jpg"
-                alt="Розробка ПЗ"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/work_1/work_1@1x.jpg 1x,
+                    ./images/desktop/work_1/work_1@2x.jpg 2x,
+                    ./images/desktop/work_1/work_1@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 1200px)"
+                  sizes="(min-width: 370px) 370px, 100vw"
+                />
+                <img
+                  src="./images/desktop/work_1/work_1@1x.jpg"
+                  alt="Розробка ПЗ"
+                />
+              </picture>
               <p class="work__description">Десктопні додатки</p>
             </li>
             <li class="work__img">
-              <img
-                src="./images/box-2.jpg"
-                alt="Тестування мобільних додатків"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/work_2/work_2@1x.jpg 1x,
+                    ./images/desktop/work_2/work_2@2x.jpg 2x,
+                    ./images/desktop/work_2/work_2@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 1200px)"
+                  sizes="(min-width: 370px) 370px, 100vw"
+                />
+                <img
+                  src="./images/desktop/work_2/work_2@1x.jpg"
+                  alt="Тестування мобільних додатків"
+                />
+              </picture>
               <p class="work__description">Мобільні додатки</p>
             </li>
             <li class="work__img">
-              <img
-                src="./images/box-3.jpg"
-                alt="Дизайн палітри кольорів"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/work_3/work_3@1x.jpg 1x,
+                    ./images/desktop/work_3/work_3@2x.jpg 2x,
+                    ./images/desktop/work_3/work_3@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 1200px)"
+                  sizes="(min-width: 370px) 370px, 100vw"
+                />
+                <img
+                  src="./images/desktop/work_3/work_3@1x.jpg"
+                  alt="Дизайн палітри кольорів"
+                />
+              </picture>
               <p class="work__description">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -221,6 +250,16 @@
                   type="image/jpeg"
                   media="(min-width: 768px)"
                   sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/foto_1/foto_1@1x.jpg 1x,
+                    ./images/desktop/foto_1/foto_1@2x.jpg 2x,
+                    ./images/desktop/foto_1/foto_1@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 270px) 270px, 100vw"
                 />
                 <img
                   src="./images/mobile/foto_1/foto_1@1x.jpg"
@@ -296,6 +335,16 @@
                   type="image/jpeg"
                   media="(min-width: 768px)"
                   sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/foto_2/foto_2@1x.jpg 1x,
+                    ./images/desktop/foto_2/foto_2@2x.jpg 2x,
+                    ./images/desktop/foto_2/foto_2@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 270px) 270px, 100vw"
                 />
                 <img
                   src="./images/mobile/foto_2/foto_2@1x.jpg"
@@ -373,6 +422,16 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 354px) 354px, 100vw"
                 />
+                <source
+                  srcset="
+                    ./images/desktop/foto_3/foto_3@1x.jpg 1x,
+                    ./images/desktop/foto_3/foto_3@2x.jpg 2x,
+                    ./images/desktop/foto_3/foto_3@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 270px) 270px, 100vw"
+                />
                 <img
                   src="./images/mobile/foto_3/foto_3@1x.jpg"
                   alt="Фотографія Микола Тарасов"
@@ -448,6 +507,16 @@
                   type="image/jpeg"
                   media="(min-width: 768px)"
                   sizes="(min-width: 354px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/foto_4/foto_4@1x.jpg 1x,
+                    ./images/desktop/foto_4/foto_4@2x.jpg 2x,
+                    ./images/desktop/foto_4/foto_4@3x.jpg 3x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 270px) 270px, 100vw"
                 />
                 <img
                   src="./images/mobile/foto_4/foto_4@1x.jpg"
@@ -584,8 +653,7 @@
         <div class="footer__wrap">
           <div class="footer__parts">
             <a class="logo footer__logo" href="./index.html">
-              Web
-              <span class="footer__studio">Studio</span>
+              Web<span class="footer__studio">Studio</span>
             </a>
             <address class="footer__address">
               <ul class="footer__list">

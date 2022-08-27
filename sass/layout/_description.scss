@@ -1,16 +1,26 @@
 .description {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .description__list {
   list-style-type: none;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     list-style: none;
     justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
 }
 
@@ -19,6 +29,7 @@
   &:last-child {
     margin-bottom: 0;
   }
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     width: 354px;

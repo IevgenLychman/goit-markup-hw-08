@@ -7,6 +7,11 @@
   color: var(--secondary-text-color);
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .user-policy__link {
